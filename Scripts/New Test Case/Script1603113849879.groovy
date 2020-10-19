@@ -20,25 +20,17 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://rctest.rc.expoplatform.com/')
 
+WebUI.click(findTestObject('Object Repository/Page_Main/div_english text'))
+
+WebUI.click(findTestObject('Page_Main/button_Sign In'))
+
+WebUI.setText(findTestObject('Page_Main/input_close_username'), 'formcompany1')
+
+WebUI.setEncryptedText(findTestObject('Page_Main/input_close_password'), 'vOoj4tQjAWVV9mKJ1JcWEw==')
+
 WebUI.click(findTestObject('Page_Main/button_Login'))
 
-WebUI.doubleClick(findTestObject('Object Repository/Page_Main/input_close_username'))
+WebUI.click(findTestObject('Page_Form Company 1/a_editEdit profile'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Main/input_close_username'), 'formcompany1')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Main/input_close_password'), 'vOoj4tQjAWVV9mKJ1JcWEw==')
-
-WebUI.click(findTestObject('Object Repository/Page_Main/button_Login'))
-
-WebUI.click(findTestObject('Object Repository/Page_Form Company 1/a_editEdit profile'))
-
-WebUI.click(findTestObject('Object Repository/Page_releaseTest/a_Sponsor Pop-Up'))
-
-WebUI.setText(findTestObject('Object Repository/Page_releaseTest/input_Pop Up Timer_sponsor_popuptimeout'), '23')
-
-WebUI.click(findTestObject('Object Repository/Page_releaseTest/div_add_a_photo                    Attach f_f90d86'))
-
-WebUI.click(findTestObject('Object Repository/Page_releaseTest/button_Save'))
-
-WebUI.click(findTestObject('Object Repository/Page_releaseTest/button_Ok'))
+WebUI.closeBrowser()
 
